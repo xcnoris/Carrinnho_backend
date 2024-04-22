@@ -67,7 +67,7 @@ internal class MenuRegistrarUsuario : Menu
 
             var novoUsuario = new Usuario(nome, cpf, dataNascimento, email, senha, tipoUsuario);
             usuarioDAL.Adicionar(novoUsuario);
-            Console.WriteLine($"O usuário {nome} foi registrado com sucesso!");
+            Console.WriteLine($"\nO usuário {nome} foi registrado com sucesso!");
             Console.Write("\nDigite qualquer coisa para continuar...");
             Console.ReadKey();
         }

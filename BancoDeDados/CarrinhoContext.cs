@@ -14,9 +14,12 @@ namespace Carrinho.BancoDeDados;
 internal class CarrinhoContext : DbContext
 {
     // Incluir a string de conexao com o banco aqui
-    //Servidor private string connetionString = "Data Source=26.145.70.47;Initial Catalog=CarrinhoBD;User ID=sa;Password=********;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False";
-    private string connetionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Carrinho_DB;Integrated Security=True;Encrypt=True;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
+    //Servidor  -  private string connetionString = "Data Source=26.145.70.47;Initial Catalog=CarrinhoBD;User ID=sa;Password=********;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False";
+    // Augusto - 
+    private string connetionString = "Data Source = XCNORIS; Initial Catalog = carrinhoBD; Integrated Security = True; Encrypt=True;Trust Server Certificate=True;Application Intent = ReadWrite; Multi Subnet Failover=False";
     
+    // Servidor Victor - private string connetionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Carrinho_DB;Integrated Security=True;Encrypt=True;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
+
     // Metodo de conexao com o banco usando o context
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
