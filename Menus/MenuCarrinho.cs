@@ -40,7 +40,7 @@ namespace Carrinho.Menus
             Console.WriteLine("Digite 3 para voltar ao menu anterior");
 
             Console.Write("\nDigite a sua opção: ");
-            string opcaoEscolhida = Console.ReadLine();
+            string opcaoEscolhida = Console.ReadLine()!;
             int opcaoEscolhidaNumerica;
 
             if (int.TryParse(opcaoEscolhida, out opcaoEscolhidaNumerica))

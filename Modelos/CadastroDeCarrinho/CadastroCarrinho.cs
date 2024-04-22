@@ -19,7 +19,6 @@ public class CadastroCarrinho
     public bool Disponivel { get; set; }
     public ICollection<AgendamentoSemanal> AgendamentosDaSemana { get; set; }
 
-
     public void AdicionarAgendamento(AgendamentoSemanal agendamento)
     {
         AgendamentosDaSemana.Add(agendamento);

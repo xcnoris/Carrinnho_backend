@@ -1,6 +1,5 @@
 ﻿using Carrinho.BancoDeDados;
 using Carrinho.Modelos.Usuarios;
-using Carrinho.Modelos.CadastroDeCarrinho;
 using Carrinho.Menus;
 
 //UsuarioComum usuarioComum1 = new UsuarioComum("Augusto Nascimento", "058.027.862-05", "07/01/2006", "augustobriel12@gmail.com", "123c456");
@@ -14,14 +13,21 @@ var usuariDAL = new DAL<Usuario>(context);
 Dictionary<int, Menu> opcoes = new();
 opcoes.Add(1, new MenuRegistrarUsuario());
 opcoes.Add(2, new MenuCarrinho());
-opcoes.Add(3, new MenuAgendarHorario());
+opcoes.Add(3, new MenuAgendamento());
 opcoes.Add(-1, new MenuSairDoPrograma());
 
 void ExibirLogo()
 {
 
-    Console.WriteLine("Carrinho\n");
-    Console.WriteLine("Bem vindo ao app do carrinho\n");
+    Console.WriteLine(@"
+
+░█████╗░░█████╗░██████╗░██████╗░██╗███╗░░██╗██╗░░██╗░█████╗░
+██╔══██╗██╔══██╗██╔══██╗██╔══██╗██║████╗░██║██║░░██║██╔══██╗
+██║░░╚═╝███████║██████╔╝██████╔╝██║██╔██╗██║███████║██║░░██║
+██║░░██╗██╔══██║██╔══██╗██╔══██╗██║██║╚████║██╔══██║██║░░██║
+╚█████╔╝██║░░██║██║░░██║██║░░██║██║██║░╚███║██║░░██║╚█████╔╝
+░╚════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝░╚════╝░");
+    Console.WriteLine("\nBem vindo ao app do carrinho\n");
 }
 
 void ExibirOpcoesDoMenu()

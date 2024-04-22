@@ -14,6 +14,7 @@ internal class MenuSairDoPrograma : Menu
     public override void Executar(DAL<Usuario> usuarioDAL)
     {
         Console.Clear();
+        ExibirLogoSair();
         Console.WriteLine("Tchau Tchau :)");
     }
 }
