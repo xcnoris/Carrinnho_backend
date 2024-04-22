@@ -2,9 +2,6 @@
 using Carrinho.Modelos.Usuarios;
 using Carrinho.Menus;
 
-//UsuarioComum usuarioComum1 = new UsuarioComum("Augusto Nascimento", "058.027.862-05", "07/01/2006", "augustobriel12@gmail.com", "123c456");
-//Console.WriteLine(usuarioComum1.ToString());
-
 
 var context = new CarrinhoContext();
 var usuariDAL = new DAL<Usuario>(context);
