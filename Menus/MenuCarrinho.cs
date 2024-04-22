@@ -2,8 +2,6 @@
 using Carrinho.Modelos.CadastroDeCarrinho;
 using Carrinho.Modelos.Usuarios;
 using Carrinho.SubMenus;
-using System;
-using System.Collections.Generic;
 
 namespace Carrinho.Menus
 {

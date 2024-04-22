@@ -29,7 +29,7 @@ public class CadastroCarrinho
         Console.WriteLine($"Lista de horarios da semana do {Nome}");
         foreach (var horario in AgendamentosDaSemana)
         {
-            Console.WriteLine($"Dia da semana: {horario.DiaDaSemana}");
+            Console.WriteLine($"Dia da semana: {horario.DataAgendamento}");
             Console.WriteLine($"horario: de {horario.HorarioAbertura}h as {horario.HorarioFechamento}");
         }
     }
