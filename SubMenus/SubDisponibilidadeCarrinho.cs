@@ -39,25 +39,29 @@ namespace Carrinho.SubMenus
                         carrinhoDAL.Atualizar(carrinhoAAtualizar);
 
                         Console.WriteLine($"O carrinho {carrinhoAAtualizar.Nome} foi atualizado!");
-                        Thread.Sleep(3000);
+                        Console.Write("\nDigite qualquer coisa para continuar...");
+                        Console.ReadKey();
                     }
                     catch (Exception ex)
                     {
                         Console.WriteLine($"Ocorreu um [ERRO]: {ex.Message}");
-                        Thread.Sleep(3000);
+                        Console.Write("\nDigite qualquer coisa para continuar...");
+                        Console.ReadKey();
                     }
                 }
                 else
                 {
                     Console.WriteLine($"Não foi encontrado nenhum carrinho cadastrado com o ID {idCarrinho}");
-                    Thread.Sleep(3000);
+                    Console.Write("\nDigite qualquer coisa para continuar...");
+                    Console.ReadKey();
                 }
 
             }
             else
             {
                 Console.WriteLine("ID inválido. Por favor, insira um número inteiro válido.");
-                Thread.Sleep(3000);
+                Console.Write("\nDigite qualquer coisa para continuar...");
+                Console.ReadKey();
             }
 
         }

@@ -59,13 +59,16 @@ namespace Carrinho.Menus
                
                     default:
                         Console.WriteLine("Opção inválida");
+                        Console.Write("\nDigite qualquer coisa para continuar...");
+                        Console.ReadKey();
                         break;
                 }
             }
             else
             {
                 Console.WriteLine("Opção inválida");
-                Thread.Sleep(4000);
+                Console.Write("\nDigite qualquer coisa para continuar...");
+                Console.ReadKey();
             }
         }
     }

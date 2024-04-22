@@ -21,12 +21,15 @@ namespace Carrinho.SubMenus
                 // Chama a instancia do DAL, adiciona no banco o carrinho
                 carrinhoDAL.Adicionar(carrinho);
                 Console.WriteLine();
-                Console.WriteLine($"O carrinho {nome} foi registrado com sucesso!");
-                Thread.Sleep(4000);
+                Console.WriteLine($"O carrinho {nome} foi registrado com sucesso!\n");
+                Console.Write("Digite qualquer coisa para continuar...");
+                Console.ReadKey();
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Ocorreu um [ERRO]: {ex.Message}");
+                Console.WriteLine($"Ocorreu um [ERRO]: {ex.Message}\n");
+                Console.Write("\nDigite qualquer coisa para continuar...");
+                Console.ReadKey();
             }
 
         }

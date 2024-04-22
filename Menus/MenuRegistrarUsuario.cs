@@ -27,7 +27,8 @@ internal class MenuRegistrarUsuario : Menu
             if (!ValidarCPF(cpf))
             {
                 Console.WriteLine("CPF inválido. Por favor, insira um CPF válido.");
-                Thread.Sleep(4000);
+                Console.Write("\nDigite qualquer coisa para continuar...");
+                Console.ReadKey();
                 return;
             }
 
@@ -36,7 +37,8 @@ internal class MenuRegistrarUsuario : Menu
             if (!DateTime.TryParseExact(dataNascimentoString, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime dataNascimento))
             {
                 Console.WriteLine("Data de nascimento inválida. Por favor, insira uma data válida no formato DD/MM/AAAA.");
-                Thread.Sleep(4000);
+                Console.Write("\nDigite qualquer coisa para continuar...");
+                Console.ReadKey();
                 return;
             }
 
@@ -45,7 +47,8 @@ internal class MenuRegistrarUsuario : Menu
             if (!ValidarEmail(email))
             {
                 Console.WriteLine("Email inválido. Por favor, insira um email válido.");
-                Thread.Sleep(4000);
+                Console.Write("\nDigite qualquer coisa para continuar...");
+                Console.ReadKey();
                 return;
             }
 
@@ -57,19 +60,22 @@ internal class MenuRegistrarUsuario : Menu
             if (!Enum.TryParse<TipoUsuario>(tipo, out TipoUsuario tipoUsuario) || !Enum.IsDefined(typeof(TipoUsuario), tipoUsuario))
             {
                 Console.WriteLine("Tipo de usuário inválido. Por favor, insira 1 para Administrador ou 2 para Cliente.");
-                Thread.Sleep(4000);
+                Console.Write("\nDigite qualquer coisa para continuar...");
+                Console.ReadKey();
                 return;
             }
 
             var novoUsuario = new Usuario(nome, cpf, dataNascimento, email, senha, tipoUsuario);
             usuarioDAL.Adicionar(novoUsuario);
             Console.WriteLine($"O usuário {nome} foi registrado com sucesso!");
-            Thread.Sleep(4000);
+            Console.Write("\nDigite qualquer coisa para continuar...");
+            Console.ReadKey();
         }
         catch (Exception excecao)
         {
             Console.WriteLine($"Ocorreu um [ERRO]: {excecao.Message}");
-            Thread.Sleep(4000);
+            Console.Write("\nDigite qualquer coisa para continuar...");
+            Console.ReadKey();
         }
     }
 
