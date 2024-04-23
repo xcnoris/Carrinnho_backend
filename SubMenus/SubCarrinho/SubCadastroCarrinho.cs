@@ -1,7 +1,7 @@
 ﻿using Carrinho.Menus;
 using Carrinho.Modelos.CadastroDeCarrinho;
 
-namespace Carrinho.SubMenus
+namespace Carrinho.SubMenus.SubCarrinho
 {
     internal class SubCadastroCarrinho : MenuCarrinho
     {

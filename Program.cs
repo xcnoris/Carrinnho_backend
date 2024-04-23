@@ -11,7 +11,7 @@ var usuariDAL = new DAL<Usuario>(context);
 
 // Dicionarios de menus
 Dictionary<int, Menu> opcoes = new();
-opcoes.Add(1, new MenuRegistrarUsuario());
+opcoes.Add(1, new MenuUsuario());
 opcoes.Add(2, new MenuCarrinho());
 opcoes.Add(3, new MenuAgendamento());
 opcoes.Add(-1, new MenuSairDoPrograma());

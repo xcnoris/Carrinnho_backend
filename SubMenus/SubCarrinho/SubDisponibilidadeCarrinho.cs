@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Carrinho.SubMenus
+namespace Carrinho.SubMenus.SubCarrinho
 {
     internal class SubDisponibilidadeCarrinho : MenuCarrinho
     {

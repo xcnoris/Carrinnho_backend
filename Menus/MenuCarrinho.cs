@@ -1,7 +1,7 @@
 ﻿using Carrinho.BancoDeDados;
 using Carrinho.Modelos.CadastroDeCarrinho;
 using Carrinho.Modelos.Usuarios;
-using Carrinho.SubMenus;
+using Carrinho.SubMenus.SubCarrinho;
 
 namespace Carrinho.Menus
 {
