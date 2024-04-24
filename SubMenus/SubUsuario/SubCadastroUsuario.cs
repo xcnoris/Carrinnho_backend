@@ -16,7 +16,6 @@ namespace Carrinho.SubMenus.SubUsuario
 
             try
             {
-                Console.Clear();
                 ExibirTituloDaOpcao("Cadastro de Usuario");
 
                 Console.WriteLine("Qual o nome do usuário?");

@@ -21,7 +21,7 @@ internal class DAL<T> where T : class
     // Metodo listar musicas
     public IEnumerable<T> Listar()
     {
-        // Usamos o generic Set para pegar o tpo da class  que estamos ultiliazando ao chamar o metodo
+        // Usamos o generic Set para pegar o tipo da class  que estamos ultilizando ao chamar o metodo
         return context.Set<T>().ToList();
     }
 

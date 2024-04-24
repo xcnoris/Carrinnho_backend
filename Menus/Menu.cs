@@ -7,6 +7,7 @@ internal class Menu
 {
     public void ExibirTituloDaOpcao(string titulo)
     {
+        Console.Clear();
         int quantidadeDeLetras = titulo.Length;
         string asteriscos = string.Empty.PadLeft(quantidadeDeLetras, '*');
         Console.WriteLine(asteriscos);

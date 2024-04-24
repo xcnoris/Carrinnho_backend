@@ -37,7 +37,8 @@ internal class MenuUsuario : Menu
     {
         Console.WriteLine("Digite 1 para cadastrar um usuario");
         Console.WriteLine("Digite 2 para bloquear/liberar um usuario");
-        Console.WriteLine("Digite 3 para voltar ao menu anterior");
+        Console.WriteLine("Digite 3 para ver lista de usuarios cadastrados ");
+        Console.WriteLine("Digite 4 para voltar ao menu anterior");
 
         Console.Write("\nDigite a sua opção: ");
         string opcaoEscolhida = Console.ReadLine()!;
@@ -56,6 +57,10 @@ internal class MenuUsuario : Menu
                     //Desenvolver
                     break;
                 case 3:
+                    SubListarUsuarios usuario3 = new SubListarUsuarios();
+                    usuario3.ListarUsuarios();
+                    break;
+                case 4:
                     break;
 
                 default:

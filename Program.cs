@@ -34,7 +34,7 @@ void ExibirOpcoesDoMenu()
 {
     Console.Clear();
     ExibirLogo();
-    Console.WriteLine("\nDigite 1 para registrar um usuario");
+    Console.WriteLine("\nDigite 1 para acessa o menu de usuarios");
     Console.WriteLine("Digite 2 para acessar o menu de carrinho");
     Console.WriteLine("Digite 3 para agendar um horario");
     Console.WriteLine("Digite -1 para sair do app");
