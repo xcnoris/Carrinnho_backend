@@ -24,6 +24,7 @@ namespace Carrinho.SubMenus.SubUsuario
                 Console.WriteLine("Qual o CPF do usuário? (apenas números)");
                 var cpf = Console.ReadLine();
 
+                // Função de validação do cpf
                 if (!ValidarCPF(cpf))
                 {
                     Console.WriteLine("CPF inválido. Por favor, insira um CPF válido.");
@@ -34,6 +35,7 @@ namespace Carrinho.SubMenus.SubUsuario
 
                 Console.WriteLine("Qual a data de nascimento do usuário? (no formato DD/MM/AAAA)");
                 var dataNascimentoString = Console.ReadLine();
+                // Função de validação da darta nascimento
                 if (!DateTime.TryParseExact(dataNascimentoString, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime dataNascimento))
                 {
                     Console.WriteLine("Data de nascimento inválida. Por favor, insira uma data válida no formato DD/MM/AAAA.");
@@ -41,6 +43,7 @@ namespace Carrinho.SubMenus.SubUsuario
                     Console.ReadKey();
                     return;
                 }
+
 
                 Console.WriteLine("Qual o email do usuário?");
                 var email = Console.ReadLine();
